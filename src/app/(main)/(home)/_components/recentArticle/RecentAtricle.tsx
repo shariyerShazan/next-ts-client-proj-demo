@@ -40,13 +40,13 @@ const RecentArticle = () => {
           {articles.map((item, index) => (
             <div
               key={index}
-              className="rounded-lg overflow-hidden shadow hover:shadow-lg transition group"
+              className="rounded-lg overflow-hidden  transition group"
             >
-              <div className="relative">
+              <div className="relative rounded-lg">
                 <Image
                   src={item.image}
                   alt={item.title}
-                  className="object-cover w-full h-56 group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover w-full h-72 group-hover:scale-105 transition-transform duration-500 rounded-lg "
                 />
                 <div className=" hidden group-hover:block">
                     <button className="absolute top-3 flex gap-1  items-center left-3 bg-[#cba65f] text-white text-xs px-3 py-1 rounded-md shadow">
@@ -56,13 +56,16 @@ const RecentArticle = () => {
                 </div>
               </div>
               <div className="p-4 text-left">
-                <p className="text-sm text-[#b59b58] font-medium">
-                  {item.category}
-                </p>
+                  <div className="flex justify-between items-center">
+                     <p className="text-sm text-[#b59b58] font-medium">
+                         {item.category}
+                     </p>
+                     <p className="text-gray-400 text-sm mt-2">{item.date}</p>
+                  </div>
                 <p className="text-gray-700 font-semibold text-base leading-snug mt-1">
                   {item.title}
                 </p>
-                <p className="text-gray-400 text-sm mt-2">{item.date}</p>
+               
               </div>
             </div>
           ))}

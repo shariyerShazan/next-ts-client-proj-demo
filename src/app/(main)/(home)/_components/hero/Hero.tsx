@@ -6,7 +6,7 @@ import HeroSocialLink from "./HeroSocialLink";
 
 const Hero = () => {
   return (
-    <section className="relative w-full  h-[90vh] flex items-end justify-start overflow-hidden">
+    <section className="relative w-full  h-[100vh] flex items-end justify-start overflow-hidden">
       {/* Background image */}
       <Image
         src={heroOne}
