@@ -12,6 +12,10 @@ const trendingItems = [
   { image: yacht, title: "Yacht", listings: "32,795 Listings" },
   { image: jewelry, title: "Jewellery", listings: "12,795 Listings" },
   { image: watch, title: "Watch", listings: "9,795 Listings" },
+    { image: house, title: "Real Estate", listings: "52,795 Listings" },
+  { image: yacht, title: "Yacht", listings: "32,795 Listings" },
+  { image: jewelry, title: "Jewellery", listings: "12,795 Listings" },
+  { image: watch, title: "Watch", listings: "9,795 Listings" },
 ];
 
 const Trending = () => {
