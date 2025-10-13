@@ -17,7 +17,7 @@ const HeroSocialLink = () => {
         top-1/2 right-0 p-5 -translate-y-1/2 
         flex flex-col items-center gap-4 
         bg-white/20 
-        backdrop-blur-2xl 
+        backdrop-blur-md
         p-3 
         rounded-l-2xl 
         shadow-lg 
@@ -31,7 +31,7 @@ const HeroSocialLink = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="
-            text-white text-xl 
+            text-black text-xl 
             hover:text-[#cba65f] 
             bg-[#cba65f]
             transition 

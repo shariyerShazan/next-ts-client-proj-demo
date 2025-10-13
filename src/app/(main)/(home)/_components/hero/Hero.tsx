@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import heroOne from "../../../../assets/hero/heroOne.jpg";
+import heroOne from "../../../../../assets/home/hero/heroOne.jpg"                     
 import HeroSocialLink from "./HeroSocialLink";
 
 const Hero = () => {
