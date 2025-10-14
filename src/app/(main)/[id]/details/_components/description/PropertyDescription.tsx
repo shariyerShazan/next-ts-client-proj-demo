@@ -22,7 +22,7 @@ const PropertyDescription = () => {
   ];
 
   return (
-    <section className="w-full px-6 md:px-16 py-10">
+    <section className="w-full  py-10">
       <div className="max-w-6xl mx-auto">
         {/* Title and price */}
         <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">

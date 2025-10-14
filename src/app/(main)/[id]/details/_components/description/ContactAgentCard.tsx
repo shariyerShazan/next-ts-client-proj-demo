@@ -16,7 +16,7 @@ import user from "../../../../../../assets/main/home/testimonial/userF.png"
 
 const ContactAgentCard = () => {
   return (
-    <Card className="max-w-md border rounded-xl shadow-sm">
+    <Card className="max-w-md border border-gray-300 rounded-xl shadow-sm">
       <CardContent className="p-6 space-y-5">
         {/* Agent Info */}
         <div className="flex items-center gap-4">
@@ -28,7 +28,7 @@ const ContactAgentCard = () => {
             className="rounded-full object-cover"
           />
           <div>
-            <h3 className="font-semibold text-gray-900">Alvaro</h3>
+            <h3 className="font-semibold text-gray-900">Priya</h3>
             <p className="text-sm text-gray-500">
               1 month with JamesEdition
             </p>
@@ -41,13 +41,13 @@ const ContactAgentCard = () => {
         {/* Contact Form */}
         <div className="space-y-3">
           <div>
-            <Input placeholder="Alvaro" />
+            <Input placeholder="Priya"  className="focus:!ring-0"/>
           </div>
           <div>
-            <Input placeholder="uxshakil@gmail.com" type="email" />
+            <Input placeholder="priya@gmail.com" className="focus:!ring-0" type="email" />
           </div>
           <div className="flex">
-            <select className="border border-gray-300 rounded-l-md px-2 text-sm outline-none">
+            <select className="border  rounded-l-md px-2 text-sm outline-none">
               <option value="+880">+880</option>
               <option value="+1">+1</option>
               <option value="+44">+44</option>
@@ -55,10 +55,11 @@ const ContactAgentCard = () => {
             </select>
             <Input
               placeholder="Phone (optional)"
-              className="rounded-l-none border-l-0"
+              className="rounded-l-none border-l-0 focus:!ring-0"
             />
           </div>
           <Textarea
+          className="focus:!ring-0"
             defaultValue="Please contact me regarding Beacon of luxury within the country's priciest zip code"
           />
         </div>
@@ -70,7 +71,7 @@ const ContactAgentCard = () => {
 
         {/* Checkboxes */}
         <div className="space-y-2 pt-2">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-top space-x-2">
             <Checkbox id="notify" defaultChecked />
             <Label
               htmlFor="notify"
@@ -80,14 +81,14 @@ const ContactAgentCard = () => {
             </Label>
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-top gap-2">
             <Checkbox id="terms" defaultChecked />
             <Label
               htmlFor="terms"
-              className="text-sm text-gray-700 cursor-pointer"
+              className="text-sm text-gray-700 cursor-pointer inline-flex flex-wrap"
             >
               I agree to{" "}
-              <a href="#" className="underline hover:text-gray-900">
+              <a href="#" className="underline hover:text-gray-900 ">
                 Terms of Use
               </a>{" "}
               and{" "}
@@ -96,6 +97,7 @@ const ContactAgentCard = () => {
               </a>
             </Label>
           </div>
+
         </div>
       </CardContent>
     </Card>
