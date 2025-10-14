@@ -4,6 +4,7 @@ import FeaturedCategory from './_components/featuredCategory/FeaturedCategory'
 import Trending from './_components/trending/Trending'
 import RecentArticle from './_components/recentArticle/RecentAtricle'
 import WhyWithUs from './_components/whyWithUS/WhyWithUs'
+import ExclusivePropertiy from './_components/exclusiveSection/ExclusivePropertiy'
 
 const 
 home = () => {
@@ -12,6 +13,7 @@ home = () => {
         <Hero />
         <FeaturedCategory />
         <Trending />
+        <ExclusivePropertiy />
           <RecentArticle />
           <WhyWithUs />
     </div>
