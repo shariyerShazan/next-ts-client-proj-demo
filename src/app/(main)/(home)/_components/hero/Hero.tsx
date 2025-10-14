@@ -16,8 +16,6 @@ const Hero = () => {
         className="object-cover"
       />
 
-      {/* Dark overlay */}
-
 
       {/* Content */}
       <div className="container">
