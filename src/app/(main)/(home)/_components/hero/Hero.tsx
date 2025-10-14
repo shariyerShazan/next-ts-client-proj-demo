@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import heroOne from "../../../../../assets/main/home/hero/heroOne.jpg"                     
-import HeroSocialLink from "./HeroSocialLink";
+// import HeroSocialLink from "./HeroSocialLink";
 
 const Hero = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       
       {/* social links */}
-      <HeroSocialLink />
+      {/* <HeroSocialLink /> */}
     </section>
   );
 };
