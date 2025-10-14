@@ -24,7 +24,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="flex justify-center items-center pb-16 pt-[8%] bg-gray-50">
+    <section className="flex justify-center items-center pb-16 pt-[7%] bg-gray-50">
       <div className="bg-white w-full max-w-4xl shadow-sm border rounded-md p-10">
 
         <h2 className="text-2xl text-center font-semibold text-[#b59b58] mb-8 border-b pb-3">

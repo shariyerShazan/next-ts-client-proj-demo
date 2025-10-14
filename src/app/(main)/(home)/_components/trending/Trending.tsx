@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
-import house from "../../../../../assets/home/trending/house.jpg"
-import yacht from "../../../../../assets/home/trending/yacht.jpg"
-import jewelry from "../../../../../assets/home/trending/jewelry.jpg"
-import watch from "../../../../../assets/home/trending/watch.jpg"
-import { BiHeart } from "react-icons/bi";
-import TrendingCard from "./TrendingCard";
+import house from "../../../../../assets/main/home/trending/house.jpg"
+import yacht from "../../../../../assets/main/home/trending/yacht.jpg"
+import jewelry from "../../../../../assets/main/home/trending/jewelry.jpg"
+import watch from "../../../../../assets/main/home/trending/watch.jpg"
+// import { BiHeart } from "react-icons/bi";
+import TrendingCard from "../../../../../components/shared/main/tendingCard/TrendingCard";
 
 
 export interface TrendingItem {
@@ -33,7 +33,7 @@ const Trending = () => {
         Trending <span className="text-[#cba65f]">Now</span>
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  mx-auto">
+      <div >
         <TrendingCard trendingItems={trendingItems} />
       </div>
     </section>

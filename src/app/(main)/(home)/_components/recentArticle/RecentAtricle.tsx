@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import articleImg from "../../../../../assets/home/article&withUs/article.jpg"
+import articleImg from "../../../../../assets/main/home/article&withUs/article.jpg"
 // import { BiRightArrow } from "react-icons/bi";
 // import { ArrowBigRight } from "lucide-react";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -40,9 +40,9 @@ const RecentArticle = () => {
           {articles.map((item, index) => (
             <div
               key={index}
-              className="rounded-lg overflow-hidden  transition group"
+              className="rounded-lg  transition"
             >
-              <div className="relative rounded-lg">
+              <div className="relative rounded-lg overflow-hidden  group">
                 <Image
                   src={item.image}
                   alt={item.title}

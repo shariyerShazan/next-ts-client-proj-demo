@@ -1,16 +1,17 @@
+
 import Image from 'next/image'
 import React from 'react'
 import { BiHeart } from 'react-icons/bi'
-import { TrendingItem } from './Trending'
+
 
 
 interface TrendingCardProps {
-    trendingItems: TrendingItem[];
+    trendingItems: [];
   }
 
 const TrendingCard : React.FC<TrendingCardProps> = ({trendingItems}) => {
   return (
-    <div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  mx-auto">
       {trendingItems.map((item, index) => (
           <div key={index} className="relative h-72 rounded-lg overflow-hidden shadow-md group">
             <Image

@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "./../../../../assets/home/header/logo.png"
-import frame from "./../../../../assets/home/header/Frame.png"
+import logo from "./../../../../assets/main/home/header/logo.png"
+import frame from "./../../../../assets/main/home/header/Frame.png"
 import { Button } from "@/components/ui/button";
 
 const Header = () => {

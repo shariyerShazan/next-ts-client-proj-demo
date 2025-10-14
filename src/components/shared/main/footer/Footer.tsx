@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "../../../../assets/home/header/logo.png";
+import logo from "../../../../assets/main/home/header/logo.png";
 import { Button } from "@/components/ui/button";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 

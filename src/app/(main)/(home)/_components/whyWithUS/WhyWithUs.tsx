@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import building1 from "../../../../../assets/home/article&withUs/buildingOne.jpg";
-import building2 from "../../../../../assets/home/article&withUs/buildingTwo.jpg";
-import frame from "../../../../../assets/home/article&withUs/frameU.png";
+import building1 from "../../../../../assets/main/home/article&withUs/buildingOne.jpg";
+import building2 from "../../../../../assets/main/home/article&withUs/buildingTwo.jpg";
+import frame from "../../../../../assets/main/home/article&withUs/frameU.png";
 import { FaBuilding, FaUsers, FaCheckCircle } from "react-icons/fa";
 
 const WhyWithUs = () => {

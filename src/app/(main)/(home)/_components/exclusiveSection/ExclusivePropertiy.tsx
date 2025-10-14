@@ -2,9 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { FaArrowRight, FaPlay } from "react-icons/fa";
-import houseOne from "./../../../../../assets/home/article&withUs/houseOne.jpg";
-import houseTwo from "./../../../../../assets/home/article&withUs/houseTwo.jpg";
-import houseThree from "./../../../../../assets/home/article&withUs/houseThree.jpg";
+import houseOne from "./../../../../../assets/main/home/article&withUs/houseOne.jpg";
+import houseTwo from "./../../../../../assets/main/home/article&withUs/houseTwo.jpg";
+import houseThree from "./../../../../../assets/main/home/article&withUs/houseThree.jpg";
 
 const ExclusiveProperty = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import userImg from "./../../../../../assets/home/testimonial/userF.png"; 
-import homeImage1 from "./../../../../../assets/home/testimonial/homeIcon1.png"; 
-import homeImage2 from "./../../../../../assets/home/testimonial/homeIcon2.png"; 
+import userImg from "./../../../../../assets/main/home/testimonial/userF.png"; 
+import homeImage1 from "./../../../../../assets/main/home/testimonial/homeIcon1.png"; 
+import homeImage2 from "./../../../../../assets/main/home/testimonial/homeIcon2.png"; 
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { HiMiniArrowRight } from "react-icons/hi2";
