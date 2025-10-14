@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './_components/hero/Hero'
+import Trending from './_components/trending/Trending'
 
 const page = () => {
   return (
@@ -10,8 +11,9 @@ const page = () => {
                   <li className=' list-disc'>Brokered by SUPREME REALTY GROUP</li>
               </ul>
           </div>
-          <div>
+          <div className='my-6'>
             <Hero />
+            <Trending />
           </div>
     </section>
   )

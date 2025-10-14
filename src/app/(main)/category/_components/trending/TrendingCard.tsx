@@ -1,0 +1,47 @@
+import Image from "next/image";
+import React from "react";
+import { BiHeart } from "react-icons/bi";
+import { TrendingItemC } from "./Trending";
+
+interface TrendingCardProps {
+  trendingItems: TrendingItemC[];
+}
+
+const TrendingCard: React.FC<TrendingCardProps> = ({ trendingItems }) => {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  mx-auto">
+      {trendingItems.map((item, index) => (
+        <div key={index}>
+          <div className="relative h-72 rounded-lg overflow-hidden shadow-md group">
+            <Image
+              src={item.image}
+              alt={item.text}
+              width={300}
+              height={200}
+              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between p-3 text-left">
+              <div className="flex justify-between">
+                <button className="self-start bg-white/20 text-white border border-white px-3 py-1 rounded-md text-sm font-medium backdrop-blur-sm">
+                  View More
+                </button>
+                <div>
+                  <BiHeart size={30} className="text-white" />
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div className="flex justify-between items-center py-1">
+              <h4 className="text-[#cba65f] text-lg font-semibold">{item.price}</h4>
+              <p className=" text-sm">{item.text}</p>
+            </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default TrendingCard;
