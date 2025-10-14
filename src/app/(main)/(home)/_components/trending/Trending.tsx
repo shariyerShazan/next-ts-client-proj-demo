@@ -6,8 +6,16 @@ import yacht from "../../../../../assets/home/trending/yacht.jpg"
 import jewelry from "../../../../../assets/home/trending/jewelry.jpg"
 import watch from "../../../../../assets/home/trending/watch.jpg"
 import { BiHeart } from "react-icons/bi";
+import TrendingCard from "./TrendingCard";
 
-const trendingItems = [
+
+export interface TrendingItem {
+  image: any; 
+  title: string;
+  listings: string;
+}
+
+const trendingItems : TrendingItem[] = [
   { image: house, title: "Real Estate", listings: "52,795 Listings" },
   { image: yacht, title: "Yacht", listings: "32,795 Listings" },
   { image: jewelry, title: "Jewellery", listings: "12,795 Listings" },
@@ -26,33 +34,7 @@ const Trending = () => {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  mx-auto">
-        {trendingItems.map((item, index) => (
-          <div key={index} className="relative h-72 rounded-lg overflow-hidden shadow-md group">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={300}
-              height={200}
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-            />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between p-3 text-left">
-               <div className="flex justify-between">
-                <button className="self-start bg-white/20 text-white border border-white px-3 py-1 rounded-md text-sm font-medium backdrop-blur-sm">
-                View More
-              </button>
-              <div>
-                <BiHeart size={30} className="text-white" />
-              </div> 
-               </div>
-              <div>
-                <h4 className="text-white text-lg font-semibold">{item.title}</h4>
-                <p className="text-gray-200 text-sm">{item.listings}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+        <TrendingCard trendingItems={trendingItems} />
       </div>
     </section>
   );
