@@ -1,7 +1,8 @@
 import React from 'react'
 import Hero from './_components/hero/Hero'
 import Trending from './_components/trending/Trending'
-import ExploreArea from './_components/ exploreArea/ExploreArea'
+import ExploreArea from './_components/ exploreArea copy/ExploreArea'
+
 
 const page = () => {
   return (

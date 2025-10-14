@@ -18,7 +18,7 @@ const HeroSocialLink = () => {
         flex flex-col items-center gap-4 
         bg-white/20 
         backdrop-blur-md
-        rounded-l-2xl 
+        rounded-l-2xl
         shadow-lg 
         z-50
       "

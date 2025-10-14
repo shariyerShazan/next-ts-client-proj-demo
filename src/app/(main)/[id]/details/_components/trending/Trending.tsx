@@ -1,5 +1,5 @@
 import React from 'react'
-import home from "../../../../../assets/main/category/house.jpg"
+import home from "../../../../../../assets/main/detailsPage/house.jpg"
 import TrendingCard from './TrendingCard';
 
 export interface TrendingItemC {

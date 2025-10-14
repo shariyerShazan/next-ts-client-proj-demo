@@ -16,7 +16,7 @@ const FeaturedCategory = () => {
         Featured <span className="text-[#cba65f]">Categories</span>
       </h2>
 
-      <div className="grid grid-cols-5 justify-center gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 justify-center gap-6">
         {categories.map((cat, index) => (
           <div
             key={index}
