@@ -17,7 +17,7 @@ const Hero = () => {
       />
 
       {/* Dark overlay */}
-      {/* <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" /> */}
+
 
       {/* Content */}
       <div className="container">
