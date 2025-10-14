@@ -5,6 +5,7 @@ import Trending from './_components/trending/Trending'
 import RecentArticle from './_components/recentArticle/RecentAtricle'
 import WhyWithUs from './_components/whyWithUS/WhyWithUs'
 import ExclusivePropertiy from './_components/exclusiveSection/ExclusivePropertiy'
+import TestimonialsAndCta from './_components/testimonialsAndCta/TestimonialsAndCta'
 
 const 
 home = () => {
@@ -16,6 +17,7 @@ home = () => {
         <ExclusivePropertiy />
           <RecentArticle />
           <WhyWithUs />
+          <TestimonialsAndCta />
     </div>
   )
 }
