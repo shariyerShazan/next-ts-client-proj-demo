@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './_components/hero/Hero'
 import Trending from './_components/trending/Trending'
 import ExploreArea from './_components/ exploreArea copy/ExploreArea'
+import PropertyDescription from './_components/description/PropertyDescription'
 
 
 const page = () => {
@@ -15,6 +16,7 @@ const page = () => {
           </div>
           <div className='my-6 container'>
             <Hero />
+            <PropertyDescription />
             <ExploreArea />
             <Trending />
           </div>
