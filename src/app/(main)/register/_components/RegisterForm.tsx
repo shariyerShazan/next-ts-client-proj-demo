@@ -10,6 +10,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Link from "next/link";
 
 const RegisterForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -104,9 +105,9 @@ const RegisterForm = () => {
           {/* Login Link */}
           <p className="text-center text-sm text-gray-600">
             Already have an account?{" "}
-            <a href="/login" className="text-[#CDAE66] font-medium hover:underline">
+            <Link href={"/login"} className="text-[#CDAE66] font-medium hover:underline">
               Login
-            </a>
+            </Link>
           </p>
         </CardContent>
       </Card>
