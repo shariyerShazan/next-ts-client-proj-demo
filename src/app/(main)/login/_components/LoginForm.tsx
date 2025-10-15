@@ -10,9 +10,10 @@ import {
   CardTitle,
   CardContent,
 } from "@/components/ui/card";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from "react-icons/fa";
 import { Checkbox } from "@/components/ui/checkbox"
 import Link from "next/link";
+import { MdFacebook } from "react-icons/md";
 
 
 const LoginForm = () => {
@@ -20,7 +21,7 @@ const LoginForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
-      <Card className="w-full max-w-md p-6 rounded-2xl shadow-sm">
+      <Card className="w-full max-w-lg p-6 rounded-2xl shadow-sm">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-gray-900">
             Login
@@ -69,6 +70,22 @@ const LoginForm = () => {
             Login
           </Button>
 
+            {/* social login */}
+             <div>
+                 <p className="text-center text-sm">Continue with </p>
+
+                 <div className="flex gap-2 justify-center items-center">
+                    <Button variant="outline" className="w-[49%] !border-gray-300">
+                        <FaGoogle />
+                        Google
+                    </Button>
+                    <Button variant="outline"  className="w-[49%] !border-gray-300">
+                        <FaFacebook />
+                        Facebook
+                    </Button>
+                 </div>
+             </div>
+
           {/* Register Link */}
           <p className="text-center text-sm text-gray-600">
             Don’t have an account?{" "}
@@ -76,6 +93,7 @@ const LoginForm = () => {
               Register
             </Link>
           </p>
+          
         </CardContent>
       </Card>
     </div>

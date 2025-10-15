@@ -37,11 +37,12 @@ const Header = () => {
           ))}
         </nav>
 
+
         {/* Right: Frame + Login */}
         <div className="flex items-center gap-3">
           <Image src={frame} alt="frame icon" width={28} height={28} />
-          <Button className="!bg-[#b18d4f] !text-white !px-10 !py-2 !rounded-full !font-semibold hover:!bg-[#b18d4f]">
-            Login
+          <Button asChild className="!bg-[#b18d4f] !text-white !px-10 !py-2 !rounded-full !font-semibold hover:!bg-[#b18d4f]">
+              <Link href="/login">Login</Link>
           </Button>
         </div>
       </div>
