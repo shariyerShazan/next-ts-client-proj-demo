@@ -4,9 +4,9 @@ import OtpVerify from './_components/Otp'
 const page = () => {
 
   return (
-    <div>
+    <>
         <OtpVerify />
-    </div>
+    </>
   )
 }
 
