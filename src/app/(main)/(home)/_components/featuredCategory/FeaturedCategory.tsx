@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaBuilding, FaCar, FaShip, FaClock, FaGem } from "react-icons/fa";
 
@@ -15,8 +16,8 @@ const FeaturedCategory = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-10 ">
         Featured <span className="text-[#cba65f]">Categories</span>
       </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 justify-center gap-6">
+   <Link href={`1/details`} >
+     <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 justify-center gap-6">
         {categories.map((cat, index) => (
           <div
             key={index}
@@ -28,6 +29,7 @@ const FeaturedCategory = () => {
           </div>
         ))}
       </div>
+   </Link>
     </section>
   );
 };

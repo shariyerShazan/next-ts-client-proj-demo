@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { BiHeart } from 'react-icons/bi'
 import { TrendingItem } from '../../../../app/(main)/(home)/_components/trending/Trending'
+import Link from 'next/link';
 
 
 interface TrendingCardProps {
@@ -24,9 +25,11 @@ const TrendingCard : React.FC<TrendingCardProps> = ({trendingItems}) => {
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between p-3 text-left">
                <div className="flex justify-between">
-                <button className="self-start bg-white/20 text-white border border-white px-3 py-1 rounded-md text-sm font-medium backdrop-blur-sm">
-                View More
-              </button>
+                <Link href={`1/details`}>
+                    <button className="self-start bg-white/20 text-white border border-white px-3 py-1 rounded-md text-sm font-medium backdrop-blur-sm">
+                       View More
+                    </button>
+                </Link>
               <div>
                 <BiHeart size={30} className="text-white" />
               </div> 
